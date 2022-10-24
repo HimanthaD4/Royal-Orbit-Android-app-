@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textView21" type="id" />
+    <item name="textView20" type="id" />
+    <item name="textView18" type="id" />
+    <item name="btn_king" type="id" />
+    <item name="btn_queen" type="id" />
+    <item name="btn_single" type="id" />
+    <item name="btn_double" type="id" />
+    <item name="imageView23" type="id" />
+    <item name="textView15" type="id" />
+    <item name="imageView22" type="id" />
+    <item name="imageView21" type="id" />
+    <item name="textView19" type="id" />
+    <item name="imageView17" type="id" />
+    <item name="textView14" type="id" />
+    <item name="imageView20" type="id" />
+    <item name="textView16" type="id" />
+    <item name="imageView19" type="id" />
+    <item name="imageView18" type="id" />
+</resources>

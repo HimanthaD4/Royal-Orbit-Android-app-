@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RoyalOrbitLast" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#cfecec</item>
+        <item name="colorPrimaryVariant">#cfecec</item>
+        <item name="colorOnPrimary">#cfecec</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#cfecec</item>
+        <item name="colorSecondaryVariant">#cfecec</item>
+        <item name="colorOnSecondary">#cfecec</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+    </style>
+</resources>

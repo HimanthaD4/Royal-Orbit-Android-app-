@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "766114671218",
+    "firebase_url": "https://royal-orbit-last-default-rtdb.firebaseio.com",
+    "project_id": "royal-orbit-last",
+    "storage_bucket": "royal-orbit-last.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766114671218:android:0f87c8bcae1824559a30eb",
+        "android_client_info": {
+          "package_name": "com.example.royalorbitlast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "766114671218-o23pfi14ppi911jqeq4kf4nho49c7cok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWoquaaSclyDTFFFSBF7iEAkpA1i9gXxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "766114671218-o23pfi14ppi911jqeq4kf4nho49c7cok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
