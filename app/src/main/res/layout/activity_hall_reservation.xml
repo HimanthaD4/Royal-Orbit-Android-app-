@@ -50,18 +50,6 @@
         app:layout_constraintVertical_bias="0.699" />
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="169dp"
-        android:layout_height="116dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.111"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642"
-        app:srcCompat="@drawable/queencourt" />
-
-    <ImageView
         android:id="@+id/imageView20"
         android:layout_width="190dp"
         android:layout_height="266dp"
@@ -76,6 +64,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.241"
         app:srcCompat="@android:drawable/screen_background_light_transparent" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="183dp"
+        android:layout_height="119dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185"
+        app:srcCompat="@drawable/kingcourt" />
 
     <TextView
         android:id="@+id/textView19"
@@ -92,13 +92,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.31" />
 
-    <ImageView
-        android:id="@+id/imageView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/screen_background_light_transparent"
-        tools:layout_editor_absoluteX="203dp"
-        tools:layout_editor_absoluteY="103dp" />
+
 
 
     <ImageView
@@ -155,6 +149,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.699" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="158dp"
+        android:layout_height="101dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.631"
+        app:srcCompat="@drawable/greencourt" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="180dp"
+        android:layout_height="125dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178"
+        app:srcCompat="@drawable/crowncourt" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="216dp"
+        android:layout_height="146dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646"
+        app:srcCompat="@drawable/queencourt" />
 
     <Button
         android:id="@+id/btn_king"
@@ -217,12 +247,43 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.878" />
 
-    <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/screen_background_light_transparent"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="483dp" />
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="161dp"
+        android:layout_height="109dp"
+        android:text="✤ 400 Luxury Seats
+        ✤ Eight washrooms
+        ✤ 400 People capacity
+                           ✤ Buffet
+                           ✤ Rs. 10 00 000 per day
+
+"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="161dp"
+        android:layout_height="109dp"
+        android:text="✤ 300 Luxury Seats
+        ✤ Six washrooms
+        ✤ 300 People capacity
+                           ✤ Buffet
+                           ✤ Rs. 800 000 per day
+
+"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
