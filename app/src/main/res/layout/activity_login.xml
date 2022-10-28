@@ -78,7 +78,7 @@
         android:id="@+id/phone"
         android:layout_width="280dp"
         android:layout_height="44dp"
-        android:layout_marginTop="528dp"
+        android:layout_marginTop="448dp"
         android:backgroundTint="#86D5D5"
         android:ems="10"
         android:hint="        Enter Your phone number"
@@ -86,7 +86,7 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#007F7F"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintHorizontal_bias="0.821"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -104,10 +104,10 @@
         android:textColorHint="#007F7F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView5"
-        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.48" />
 
     <TextView
         android:id="@+id/textView9"
