@@ -18,9 +18,12 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+
+
+
 public class Register extends AppCompatActivity {
     DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://royal-orbit-last-default-rtdb.firebaseio.com/");
-
+  //  FirebaseFirestore db = FirebaseFirestore.getInstance().getReferenceFromUrl("https://royal-orbit-last-default-rtdb.firebaseio.com/");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,13 +33,12 @@ public class Register extends AppCompatActivity {
 
         setContentView(R.layout.activity_register);
 
-
         final EditText name = findViewById(R.id.name);
         final EditText email = findViewById(R.id.email);
         final EditText password = findViewById(R.id.password);
         final EditText phone = findViewById(R.id.phone);
 
-//        final Button registerone = findViewById(R.id.registerone);
+
         final Button regi = findViewById(R.id.regi);
 
         regi.setOnClickListener(new View.OnClickListener() {

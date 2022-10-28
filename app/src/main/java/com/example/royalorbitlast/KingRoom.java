@@ -28,15 +28,15 @@ public class KingRoom extends AppCompatActivity {
 
         DatabaseReference myRef = database.getReference("Room Reservations");
 
-        final EditText phoneDouble = findViewById(R.id.phoneDouble);
-        final EditText noRoomDouble = findViewById(R.id.noRoomDouble);
-        final EditText inDateDouble = findViewById(R.id.inDateDouble);
-//        final EditText outDateDouble = findViewById(R.id.outDateDouble);
-        final EditText dDouble = findViewById(R.id.dDouble);
+        final EditText phoneK = findViewById(R.id.phoneK);
+        final EditText noRoomK = findViewById(R.id.noRoomK);
+        final EditText inDateK = findViewById(R.id.inDateK);
+//        final EditText outDateK = findViewById(R.id.outDateDouble);
+        final EditText dK = findViewById(R.id.dK);
 
 
 
-        final Button confirmDouble = findViewById(R.id.confirmDouble);
+        final Button confirmDouble = findViewById(R.id.confirmK);
 
         confirmDouble.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,29 +47,29 @@ public class KingRoom extends AppCompatActivity {
 
 
                 //get data from edit text to string value
-                final String phoneTxtD = phoneDouble.getText().toString();
-                final String noRoomTxtD = noRoomDouble.getText().toString();
-                final String inDateQueenTxtD = inDateDouble.getText().toString();
-//                final String outDateQueenTxtD= outDateDouble.getText().toString();
-                final String dQueenTxtD= dDouble.getText().toString();
+                final String phoneTxtK = phoneK.getText().toString();
+                final String noRoomTxtK = noRoomK.getText().toString();
+                final String inDateQueenTxtK = inDateK.getText().toString();
+//                final String outDateQueenTxtK= outDateDouble.getText().toString();
+                final String dQueenTxtK= dK.getText().toString();
 //
 //
-                final Double Rooms= Double.parseDouble(noRoomTxtD);
-                final Double dates= Double.parseDouble(dQueenTxtD);
-                final Double in= Double.parseDouble(inDateQueenTxtD);
+                final Double Rooms= Double.parseDouble(noRoomTxtK);
+                final Double dates= Double.parseDouble(dQueenTxtK);
+                final Double in= Double.parseDouble(inDateQueenTxtK);
 //                final Double out= Double.parseDouble(outDateQueenTxtD);
 
                 final Double price = Rooms * dates * 20000;
 
-                if (phoneTxtD.isEmpty()) {
-                    phoneDouble.setError("phone no. is Required");
-                    phoneDouble.requestFocus();
+                if (phoneTxtK.isEmpty()) {
+                    phoneK.setError("phone no. is Required");
+                    phoneK.requestFocus();
                     return;
                 }
 
-                if (noRoomTxtD.isEmpty()) {
-                    noRoomDouble.setError("No of Rooms Required");
-                    noRoomDouble.requestFocus();
+                if (noRoomTxtK.isEmpty()) {
+                    noRoomK.setError("No of Rooms Required");
+                    noRoomK.requestFocus();
                     return;
                 }
 
@@ -79,9 +79,9 @@ public class KingRoom extends AppCompatActivity {
 //                    return;
 //                }
 
-                if (inDateQueenTxtD.isEmpty()) {
-                    inDateDouble.setError("Check In Date Required");
-                    inDateDouble.requestFocus();
+                if (inDateQueenTxtK.isEmpty()) {
+                    inDateK.setError("Check In Date Required");
+                    inDateK.requestFocus();
                     return;
                 }
 
@@ -103,8 +103,8 @@ public class KingRoom extends AppCompatActivity {
 //                }
 
                 if(dates < 0 ){
-                    dDouble.setError("No of Dates cannot be zero");
-                    inDateDouble.requestFocus();
+                    dK.setError("No of Dates cannot be zero");
+                    inDateK.requestFocus();
                     return;
                 }
 
@@ -115,8 +115,8 @@ public class KingRoom extends AppCompatActivity {
 //                }
 
                 if(Rooms > 10 ){
-                    noRoomDouble.setError("Maximum Number Of Booking Room is 10");
-                    noRoomDouble.requestFocus();
+                    noRoomK.setError("Maximum Number Of Booking Room is 10");
+                    noRoomK.requestFocus();
                     return;
                 }
 //                if(out > 2024.1 ){
@@ -135,11 +135,11 @@ else{
         @Override
         public void onDataChange(@NonNull DataSnapshot snapshot) {
             //send data to databse
-            myRef.child("king").child(phoneTxtD).child("No Of Rooms").setValue(noRoomTxtD);
-            myRef.child("king").child(phoneTxtD).child("Check in date").setValue(inDateQueenTxtD);
+            myRef.child("king").child(phoneTxtK).child("No Of Rooms").setValue(noRoomTxtK);
+            myRef.child("king").child(phoneTxtK).child("Check in date").setValue(inDateQueenTxtK);
 //                            myRef.child("Double").child(phoneTxtD).child("Check out date").setValue(outDateQueenTxtD);
-            myRef.child("king").child(phoneTxtD).child("No of days").setValue(dQueenTxtD);
-            myRef.child("king").child(phoneTxtD).child("price").setValue(price);
+            myRef.child("king").child(phoneTxtK).child("No of days").setValue(dQueenTxtK);
+            myRef.child("king").child(phoneTxtK).child("price").setValue(price);
 
 
             Toast.makeText(KingRoom.this, "Rooms Booked Succesful", Toast.LENGTH_LONG).show();

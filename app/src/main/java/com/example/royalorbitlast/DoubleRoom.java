@@ -28,15 +28,15 @@ public class DoubleRoom extends AppCompatActivity {
 
 DatabaseReference myRef = database.getReference("Room Reservations");
 
-        final EditText phoneDouble = findViewById(R.id.phoneDouble);
-        final EditText noRoomDouble = findViewById(R.id.noRoomDouble);
-        final EditText inDateDouble = findViewById(R.id.inDateDouble);
+        final EditText phoneD = findViewById(R.id.phoneD);
+        final EditText noRoomD = findViewById(R.id.noRoomD);
+        final EditText inDateD = findViewById(R.id.inDateD);
 //        final EditText outDateDouble = findViewById(R.id.outDateDouble);
-        final EditText dDouble = findViewById(R.id.dDouble);
+        final EditText dD = findViewById(R.id.dD);
 
 
 
-        final Button confirmDouble = findViewById(R.id.confirmDouble);
+        final Button confirmDouble = findViewById(R.id.confirmD);
 
         confirmDouble.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,11 +44,11 @@ DatabaseReference myRef = database.getReference("Room Reservations");
 
 
                 //get data from edit text to string value
-                final String phoneTxtD = phoneDouble.getText().toString();
-                final String noRoomTxtD = noRoomDouble.getText().toString();
-                final String inDateQueenTxtD = inDateDouble.getText().toString();
+                final String phoneTxtD = phoneD.getText().toString();
+                final String noRoomTxtD = noRoomD.getText().toString();
+                final String inDateQueenTxtD = inDateD.getText().toString();
 //                final String outDateQueenTxtD= outDateDouble.getText().toString();
-                final String dQueenTxtD= dDouble.getText().toString();
+                final String dQueenTxtD= dD.getText().toString();
 //
 //
                 final Double Rooms= Double.parseDouble(noRoomTxtD);
@@ -59,14 +59,14 @@ DatabaseReference myRef = database.getReference("Room Reservations");
                 final Double price = Rooms * dates * 10000;
 
                 if (phoneTxtD.isEmpty()) {
-                    phoneDouble.setError("phone no. is Required");
-                    phoneDouble.requestFocus();
+                    phoneD.setError("phone no. is Required");
+                    phoneD.requestFocus();
                     return;
                 }
 
                 if (noRoomTxtD.isEmpty()) {
-                    noRoomDouble.setError("No of Rooms Required");
-                    noRoomDouble.requestFocus();
+                    noRoomD.setError("No of Rooms Required");
+                    noRoomD.requestFocus();
                     return;
                 }
 
@@ -77,8 +77,8 @@ DatabaseReference myRef = database.getReference("Room Reservations");
 //                }
 
                 if (inDateQueenTxtD.isEmpty()) {
-                    inDateDouble.setError("Check In Date Required");
-                    inDateDouble.requestFocus();
+                    inDateD.setError("Check In Date Required");
+                    inDateD.requestFocus();
                     return;
                 }
 
@@ -100,8 +100,8 @@ DatabaseReference myRef = database.getReference("Room Reservations");
 //                }
 
                 if(dates < 0 ){
-                    dDouble.setError("No of Dates cannot be zero");
-                    inDateDouble.requestFocus();
+                    dD.setError("No of Dates cannot be zero");
+                    inDateD.requestFocus();
                     return;
                 }
 
@@ -112,8 +112,8 @@ DatabaseReference myRef = database.getReference("Room Reservations");
 //                }
 
                 if(Rooms > 10 ){
-                    noRoomDouble.setError("Maximum Number Of Booking Room is 10");
-                    noRoomDouble.requestFocus();
+                    noRoomD.setError("Maximum Number Of Booking Room is 10");
+                    noRoomD.requestFocus();
                     return;
                 }
 //                if(out > 2024.1 ){

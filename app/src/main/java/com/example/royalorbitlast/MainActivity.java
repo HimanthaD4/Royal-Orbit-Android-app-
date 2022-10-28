@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
-        setContentView(R.layout.activity_main);
+         setContentView(R.layout.activity_main);
 
         btn_register = (Button)findViewById(R.id.btn_register);
         btn_login = (Button)findViewById(R.id.btn_login);

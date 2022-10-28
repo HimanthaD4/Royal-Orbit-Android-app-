@@ -21,9 +21,6 @@ public class Menu extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_menu);
 
-
-
-
         foods = (ImageButton) findViewById(R.id.foods);
         rooms = (ImageButton) findViewById(R.id.rooms);
         halls = (ImageButton) findViewById(R.id.halls);

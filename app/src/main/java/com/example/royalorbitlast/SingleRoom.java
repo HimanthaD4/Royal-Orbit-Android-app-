@@ -28,15 +28,15 @@ public class SingleRoom extends AppCompatActivity {
 
         DatabaseReference myRef = database.getReference("Room Reservations");
 
-        final EditText phoneDouble = findViewById(R.id.phoneDouble);
-        final EditText noRoomDouble = findViewById(R.id.noRoomDouble);
-        final EditText inDateDouble = findViewById(R.id.inDateDouble);
-//        final EditText outDateDouble = findViewById(R.id.outDateDouble);
-        final EditText dDouble = findViewById(R.id.dDouble);
+        final EditText phoneS = findViewById(R.id.phoneS);
+        final EditText noRoomS = findViewById(R.id.noRoomS);
+        final EditText inDateS = findViewById(R.id.inDateS);
+//        final EditText outDateS = findViewById(R.id.outDateDouble);
+        final EditText dS = findViewById(R.id.dS);
 
 
 
-        final Button confirmDouble = findViewById(R.id.confirmDouble);
+        final Button confirmDouble = findViewById(R.id.confirmS);
 
         confirmDouble.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,29 +46,29 @@ public class SingleRoom extends AppCompatActivity {
 
 
                 //get data from edit text to string value
-                final String phoneTxtD = phoneDouble.getText().toString();
-                final String noRoomTxtD = noRoomDouble.getText().toString();
-                final String inDateQueenTxtD = inDateDouble.getText().toString();
+                final String phoneTxtS = phoneS.getText().toString();
+                final String noRoomTxtS = noRoomS.getText().toString();
+                final String inDateQueenTxtS = inDateS.getText().toString();
 //                final String outDateQueenTxtD= outDateDouble.getText().toString();
-                final String dQueenTxtD= dDouble.getText().toString();
+                final String dQueenTxtS= dS.getText().toString();
 //
 //
-                final Double Rooms= Double.parseDouble(noRoomTxtD);
-                final Double dates= Double.parseDouble(dQueenTxtD);
-                final Double in= Double.parseDouble(inDateQueenTxtD);
+                final Double Rooms= Double.parseDouble(noRoomTxtS);
+                final Double dates= Double.parseDouble(dQueenTxtS);
+                final Double in= Double.parseDouble(inDateQueenTxtS);
 //                final Double out= Double.parseDouble(outDateQueenTxtD);
 
                 final Double price = Rooms * dates * 5000;
 
-                if (phoneTxtD.isEmpty()) {
-                    phoneDouble.setError("phone no. is Required");
-                    phoneDouble.requestFocus();
+                if (phoneTxtS.isEmpty()) {
+                    phoneS.setError("phone no. is Required");
+                    phoneS.requestFocus();
                     return;
                 }
 
-                if (noRoomTxtD.isEmpty()) {
-                    noRoomDouble.setError("No of Rooms Required");
-                    noRoomDouble.requestFocus();
+                if (noRoomTxtS.isEmpty()) {
+                    noRoomS.setError("No of Rooms Required");
+                    noRoomS.requestFocus();
                     return;
                 }
 
@@ -78,9 +78,9 @@ public class SingleRoom extends AppCompatActivity {
 //                    return;
 //                }
 
-                if (inDateQueenTxtD.isEmpty()) {
-                    inDateDouble.setError("Check In Date Required");
-                    inDateDouble.requestFocus();
+                if (inDateQueenTxtS.isEmpty()) {
+                    inDateS.setError("Check In Date Required");
+                    inDateS.requestFocus();
                     return;
                 }
 
@@ -102,8 +102,8 @@ public class SingleRoom extends AppCompatActivity {
 //                }
 
                 if(dates < 0 ){
-                    dDouble.setError("No of Dates cannot be zero");
-                    inDateDouble.requestFocus();
+                    dS.setError("No of Dates cannot be zero");
+                    inDateS.requestFocus();
                     return;
                 }
 
@@ -114,8 +114,8 @@ public class SingleRoom extends AppCompatActivity {
 //                }
 
                 if(Rooms > 10 ){
-                    noRoomDouble.setError("Maximum Number Of Booking Room is 10");
-                    noRoomDouble.requestFocus();
+                    noRoomS.setError("Maximum Number Of Booking Room is 10");
+                    noRoomS.requestFocus();
                     return;
                 }
 //                if(out > 2024.1 ){
@@ -139,11 +139,11 @@ public class SingleRoom extends AppCompatActivity {
 
 
                             //send data to databse
-                            myRef.child("Single").child(phoneTxtD).child("No Of Rooms").setValue(noRoomTxtD);
-                            myRef.child("Single").child(phoneTxtD).child("Check in date").setValue(inDateQueenTxtD);
+                            myRef.child("Single").child(phoneTxtS).child("No Of Rooms").setValue(noRoomTxtS);
+                            myRef.child("Single").child(phoneTxtS).child("Check in date").setValue(inDateQueenTxtS);
 //                            myRef.child("Double").child(phoneTxtD).child("Check out date").setValue(outDateQueenTxtD);
-                            myRef.child("Single").child(phoneTxtD).child("No of days").setValue(dQueenTxtD);
-                            myRef.child("Single").child(phoneTxtD).child("price").setValue(price);
+                            myRef.child("Single").child(phoneTxtS).child("No of days").setValue(dQueenTxtS);
+                            myRef.child("Single").child(phoneTxtS).child("price").setValue(price);
 
 
                             Toast.makeText(SingleRoom.this, "Rooms Booked Succesful", Toast.LENGTH_LONG).show();

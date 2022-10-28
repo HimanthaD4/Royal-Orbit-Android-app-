@@ -130,7 +130,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintHorizontal_bias="0.731"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.31" />
@@ -145,7 +145,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintHorizontal_bias="0.751"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.699" />
@@ -252,38 +252,80 @@
         android:layout_width="161dp"
         android:layout_height="109dp"
         android:text="✤ 400 Luxury Seats
-        ✤ Eight washrooms
-        ✤ 400 People capacity
+            ✤ Eight washrooms
+            ✤ 400 People capacity
                            ✤ Buffet
-                           ✤ Rs. 10 00 000 per day
+                                       ✤ Rs. 10 00 000 per day
 
 "
+        android:textColor="#706D6D"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintHorizontal_bias="0.14"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.382" />
+        app:layout_constraintVertical_bias="0.381" />
 
     <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/textView28"
+        android:layout_width="161dp"
+        android:layout_height="109dp"
+        android:text="✤ 100 Normal Seats
+            ✤ Two washrooms
+                 ✤ 100 People capacity
+                           ✤ Buffet
+                                       ✤ Rs. 3 00 000 per day
+
+"
+        android:textColor="#706D6D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="161dp"
+        android:layout_height="109dp"
+        android:text="✤ 250 Normal Seats
+            ✤ Five washrooms
+                 ✤ 250 People capacity
+                           ✤ Buffet
+                                       ✤ Rs. 5 00 000 per day
+
+"
+        android:textColor="#706D6D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814" />
+
+    <TextView
+        android:id="@+id/textView27"
         android:layout_width="161dp"
         android:layout_height="109dp"
         android:text="✤ 300 Luxury Seats
-        ✤ Six washrooms
-        ✤ 300 People capacity
+            ✤ Six washrooms
+                ✤ 300 People capacity
                            ✤ Buffet
-                           ✤ Rs. 800 000 per day
+                                       ✤ Rs. 8 00 000 per day
 
 "
+        android:textColor="#706D6D"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintHorizontal_bias="0.936"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.382" />
+        app:layout_constraintVertical_bias="0.381" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

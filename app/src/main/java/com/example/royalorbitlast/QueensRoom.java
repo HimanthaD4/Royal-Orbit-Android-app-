@@ -19,6 +19,8 @@ import com.google.firebase.database.ValueEventListener;
 
 public class QueensRoom extends AppCompatActivity {
 
+
+
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +28,13 @@ public class QueensRoom extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_queens_room);
 
+
         DatabaseReference myRef = database.getReference("Room Reservations");
 
-        final EditText phoneQueen = findViewById(R.id.phoneQueen);
+
+
+        
+  final EditText phoneQueen = findViewById(R.id.phoneQueen);
         final EditText noRoomQueen = findViewById(R.id.noRoomQueen);
         final EditText inDateQueen = findViewById(R.id.inDateQueen);
 //        final EditText outDateQueen = findViewById(R.id.outDateQueen);
@@ -41,7 +47,8 @@ public class QueensRoom extends AppCompatActivity {
             public void onClick(View view) {
 
                 //get data from edit text to string value
-                final String phoneTxtQ = phoneQueen.getText().toString();
+
+               final String phoneTxtQ = phoneQueen.getText().toString();
                 final String noRoomTxtQ = noRoomQueen.getText().toString();
                 final String inDateQueenTxtQ = inDateQueen.getText().toString();
 //                final String outDateQueenTxtQ= outDateQueen.getText().toString();
@@ -55,11 +62,11 @@ public class QueensRoom extends AppCompatActivity {
 
                 final Double price = Rooms * dates * 15000;
 
-                if (phoneTxtQ.isEmpty()) {
-                    phoneQueen.setError("phone no. is Required");
-                    phoneQueen.requestFocus();
-                    return;
-                }
+//                if (phoneTxtQ.isEmpty()) {
+//                    phoneQueen.setError("phone no. is Required");
+//                    phoneQueen.requestFocus();
+//                    return;
+//                }
 
                if (noRoomTxtQ.isEmpty()) {
                     noRoomQueen.setError("No of Rooms Required");
@@ -98,15 +105,15 @@ public class QueensRoom extends AppCompatActivity {
 
                 if(dates < 0 ){
                     dQueen.setError("No of Dates cannot be zero");
-                    inDateQueen.requestFocus();
+                    dQueen.requestFocus();
                     return;
                 }
 
-//                if(dates > 10 ){
-//                    dQueen.setError("Maximum Number Of Booking Date is 10");
-//                    dQueen.requestFocus();
-//                    return;
-//                }
+                if(dates > 10 ){
+                    dQueen.setError("Maximum Number Of Booking Date is 10");
+                    dQueen.requestFocus();
+                    return;
+                }
 
                 if(Rooms > 10 ){
                     noRoomQueen.setError("Maximum Number Of Booking Room is 10");
