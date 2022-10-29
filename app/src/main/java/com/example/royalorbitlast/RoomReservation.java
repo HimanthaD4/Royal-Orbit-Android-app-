@@ -26,7 +26,6 @@ public class RoomReservation extends AppCompatActivity {
         btn_Double = (Button) findViewById(R.id.btn_double);
         btn_single = (Button) findViewById(R.id.btn_single);
 
-
         btn_king.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

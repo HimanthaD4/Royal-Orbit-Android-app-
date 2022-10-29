@@ -87,7 +87,7 @@
 
 
     <Button
-        android:id="@+id/confirmDouble"
+        android:id="@+id/confirmKing"
         android:layout_width="121dp"
         android:layout_height="50dp"
         android:backgroundTint="#009688"
