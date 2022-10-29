@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C7ECED"
+    tools:context=".MainMenu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_radius"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical">
+
+            <!--====================  Welcome title =======================-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+
+                    android:text="Welcome Royal Orbit"
+                    android:textColor="#000000"
+                    android:textSize="30sp" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/purple_500"
+                    android:onClick="goToProfile"
+                    app:srcCompat="@drawable/user_icon" />
+
+            </LinearLayout>
+
+            <!--====================  Greeting line =======================-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Make Your Reservation Today!"
+                android:textColor="#AF0000"
+                android:textSize="18sp" />
+
+            <!--====================  1st Button Row =======================-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+
+                <!--====================  Room Reservation Button =======================-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/room_reservation"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/room_reservation"
+                        android:contentDescription="Room Reservation"
+
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Room Reservation"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <!--====================  Hall Reservation Button =======================-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/hall_reservation"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/hall_reservation"
+                        android:contentDescription="Hall Reservation"
+
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Hall Reservation"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--====================  2st Button Row =======================-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+
+                <!--====================  Room Reservation Button =======================-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/food_reservation"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/food_reservation"
+                        android:contentDescription="Food Reservation"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Food Reservation"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <!--====================  Hall Reservation Button =======================-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/event_reservation"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/event_reservation"
+                        android:contentDescription="Event Reservation"
+                        android:onClick="eventRes"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Event Reservation"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_radius"
+
+                android:scaleX="1" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

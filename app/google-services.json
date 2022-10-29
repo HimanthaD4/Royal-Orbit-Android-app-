@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "766114671218",
-    "firebase_url": "https://royal-orbit-last-default-rtdb.firebaseio.com",
-    "project_id": "royal-orbit-last",
-    "storage_bucket": "royal-orbit-last.appspot.com"
+    "project_number": "240530508521",
+    "project_id": "royal-orbit",
+    "storage_bucket": "royal-orbit.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:766114671218:android:0f87c8bcae1824559a30eb",
+        "mobilesdk_app_id": "1:240530508521:android:5b42cdfb3d0ce49c993e78",
         "android_client_info": {
-          "package_name": "com.example.royalorbitlast"
+          "package_name": "com.example.royalorbit"
         }
       },
       "oauth_client": [
         {
-          "client_id": "766114671218-o23pfi14ppi911jqeq4kf4nho49c7cok.apps.googleusercontent.com",
+          "client_id": "240530508521-dgpgv0ha068d89pnpcfi2ud49ulqabub.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAWoquaaSclyDTFFFSBF7iEAkpA1i9gXxU"
+          "current_key": "AIzaSyAYHI57wqzToIQQOtSVUDRhatmsm1GqcKc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "766114671218-o23pfi14ppi911jqeq4kf4nho49c7cok.apps.googleusercontent.com",
+              "client_id": "240530508521-dgpgv0ha068d89pnpcfi2ud49ulqabub.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

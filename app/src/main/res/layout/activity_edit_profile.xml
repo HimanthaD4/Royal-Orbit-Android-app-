@@ -1,55 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundColor"
-    tools:context=".Login">
+    tools:context=".EditProfile"
+    android:background="@color/backgroundColor">
+
 
 
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/background_radius"
         android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_marginHorizontal="10dp"
-            android:background="@drawable/background_radius"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/Update_porfile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="30dp"
-                android:text="Royal Orbit"
+                android:text="Profile Update"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="30sp" />
-
+                android:textSize="25sp" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/emailTextField"
+                android:id="@+id/first_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="20dp"
-                android:hint="Email" />
+                android:hint="First Name" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/password_text_field"
+                android:id="@+id/last_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="20dp"
-                android:hint="Password"
-                android:inputType="textPassword" />
+                android:hint="Last Name" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Address" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Phone Number" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="NIC/Passport" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Age" />
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -62,10 +92,11 @@
                     android:layout_weight="1" />
 
                 <Button
-                    android:id="@+id/login_btn"
+                    android:id="@+id/registerButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Login" />
+                    android:onClick="updateProfile"
+                    android:text="Update" />
 
                 <Space
                     android:layout_width="0dp"
@@ -80,25 +111,9 @@
                 android:layout_marginVertical="20dp"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Don\'t have an account yet?"
-                    android:textColor="#111"
-                    android:textSize="15sp" />
 
-                <TextView
-                    android:id="@+id/txt_login"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="5dp"
-                    android:onClick="forRegister"
-                    android:text="Register"
-                    android:textColor="#111"
-                    android:textSize="15sp" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

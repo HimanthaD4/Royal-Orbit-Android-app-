@@ -7,4 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="backgroundColor">#9FD1D1</color>
+    <color name="confirmButtonColor">#009688</color>
+    <color name="menuColor">#3EAEA3</color>
 </resources>
