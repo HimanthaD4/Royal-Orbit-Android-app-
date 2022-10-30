@@ -1,5 +1,4 @@
 package com.example.royalorbitlast;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,103 +15,67 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
 public class login extends AppCompatActivity {
-
-
     DatabaseReference databaseReference  = FirebaseDatabase.getInstance().getReferenceFromUrl("https://royal-orbit-last-default-rtdb.firebaseio.com/");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
 //        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
-
         setContentView(R.layout.activity_login);
-
-
 
         final Button loginone = findViewById(R.id.loginone);
         final EditText phone = findViewById(R.id.phone);
         final EditText password = findViewById(R.id.password);
 
         loginone.setOnClickListener(new View.OnClickListener() {
-
             //create objects in database to acces firebase
 
             @Override
             public void onClick(View view) {
 
-                final String phoneText = phone.getText().toString();
-                final String passwordText = password.getText().toString();
-
-
+                final String phoneText = phone.getText().toString().trim();
+                final String passwordText = password.getText().toString().trim();
                 if(phoneText.isEmpty()){
                     phone.setError("Enter Your phone number");
                     phone.requestFocus();
-                    return;
-                }
+                    return;}
                 if(passwordText.isEmpty()){
                     password.setError("Enter Your email");
                     password.requestFocus();
-                    return;
-                }
-
-
+                    return;}
 
                 else{
                     databaseReference.child("users").addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
-
                             //check mobile number is exist
                             if(snapshot.hasChild(phoneText)){
-
                                 //mobile exist in firebase
                                 final String getpassword = snapshot.child(phoneText).child("Password").getValue(String.class);
                                 if(getpassword.equals(passwordText)){
-
-
                                     //open menu
                                     Toast.makeText(login.this, "Welcome back to the Royal Ordit", Toast.LENGTH_SHORT).show();
 
-                                    openMenu();
-                                    finish();
+                                    String nameFromDB = snapshot.child(phoneText).child("Name").getValue(String.class);
+
+                                    Intent intent = new Intent(getApplicationContext(),Menu.class);
+//                                    Intent intent1 = new Intent(getApplicationContext(),ReservedRoomDetalis.class);
+
+                                    intent.putExtra("name",nameFromDB);
+                                    startActivity(intent);
                                 }
                                 else
                                 {
                                     Toast.makeText(login.this, "OOPS! TRY AGAIN, WRONG EMAIL OR PASSWORD", Toast.LENGTH_SHORT).show();
                                 }
-
                             }
                             else{
                                 Toast.makeText(login.this, "OOPS! TRY AGAIN, WRONG EMAIL OR PASSWORD", Toast.LENGTH_SHORT).show();
                             }
-
-
                         }
-
                         @Override
                         public void onCancelled(@NonNull DatabaseError error) {
+                        }});}}});}
 
-                        }
-                    });
-
-
-
-                }
-
-
-
-
-            }
-        });
-
-    }
-
-    public void openMenu( ){
-
-        Intent intent = new Intent(this, Menu.class);
-        startActivity(intent);
-    }
 }

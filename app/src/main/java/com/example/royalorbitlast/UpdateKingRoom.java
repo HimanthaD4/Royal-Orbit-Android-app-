@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -16,23 +15,24 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class KingRoom extends AppCompatActivity {
+public class UpdateKingRoom extends AppCompatActivity {
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_king_room);
+        setContentView(R.layout.activity_update_king_room);
 
         DatabaseReference myRef = database.getReference("Room Reservations");
 
-        final EditText phoneKing = findViewById(R.id.phoneKing);
-        final EditText noRoomKing = findViewById(R.id.noRoomKing);
-        final EditText inDateKing = findViewById(R.id.inDateKing);
-        final EditText dKing = findViewById(R.id.dKing);
+        final EditText phoneKing = findViewById(R.id.phoneDouble);
+        final EditText noRoomKing = findViewById(R.id.noRoomDouble);
+        final EditText inDateKing = findViewById(R.id.inDateDouble);
+        final EditText dKing = findViewById(R.id.dDouble);
 
-        final Button confirmKing = findViewById(R.id.confirmKing);
+        final Button confirmKing = findViewById(R.id.btn_update);
 
         confirmKing.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,39 +77,38 @@ public class KingRoom extends AppCompatActivity {
                     noRoomKing.requestFocus();
                     return;
                 }
-else{
-    myRef.child("king").addListenerForSingleValueEvent(new ValueEventListener() {
-        @Override
-        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                else{
+                    myRef.child("king").addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-            //send data to databse
-            myRef.child("king").child(phoneTxtK).child("No Of Rooms").setValue(noRoomTxtK);
-            myRef.child("king").child(phoneTxtK).child("Check in date").setValue(inDateTxtK);
-            myRef.child("king").child(phoneTxtK).child("No of days").setValue(dTxtK);
-            myRef.child("king").child(phoneTxtK).child("price").setValue(price);
+                            //send data to databse
+                            myRef.child("king").child(phoneTxtK).child("No Of Rooms").setValue(noRoomTxtK);
+                            myRef.child("king").child(phoneTxtK).child("Check in date").setValue(inDateTxtK);
+                            myRef.child("king").child(phoneTxtK).child("No of days").setValue(dTxtK);
+                            myRef.child("king").child(phoneTxtK).child("price").setValue(price);
 
-            String DateFromDb = snapshot.child(phoneTxtK).child("Check in date").getValue(String.class);
-            String RoomFromDb = snapshot.child(phoneTxtK).child("No Of Rooms").getValue(String.class);
-            String noDaysFromDB = snapshot.child(phoneTxtK).child("No of days").getValue(String.class);
-            String priceK = pr;
-            String typeK = type;
+                            String DateFromDb = snapshot.child(phoneTxtK).child("Check in date").getValue(String.class);
+                            String RoomFromDb = snapshot.child(phoneTxtK).child("No Of Rooms").getValue(String.class);
+                            String noDaysFromDB = snapshot.child(phoneTxtK).child("No of days").getValue(String.class);
+                            String priceK = pr;
+                            String typeK = type;
 
-            Intent intent = new Intent(getApplicationContext(),ReservedRoomDetalis.class);
+                            Intent intent = new Intent(getApplicationContext(),ReservedRoomDetalis.class);
 
-            intent.putExtra("No of Rooms",RoomFromDb);
-            intent.putExtra("Check in date",DateFromDb);
-            intent.putExtra("No of days",noDaysFromDB);
-            intent.putExtra("price",priceK);
-            intent.putExtra("type",typeK);
+                            intent.putExtra("No of Rooms",RoomFromDb);
+                            intent.putExtra("Check in date",DateFromDb);
+                            intent.putExtra("No of days",noDaysFromDB);
+                            intent.putExtra("price",priceK);
+                            intent.putExtra("type",typeK);
 
-            startActivity(intent);
-            finish();
+                            startActivity(intent);
 
-        }
-        @Override
-        public void onCancelled(@NonNull DatabaseError error) {
-        }
-    });
+                        }
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+                        }
+                    });
                 }
             }
         });
