@@ -86,7 +86,7 @@
 
 
     <Button
-        android:id="@+id/confirmDouble"
+        android:id="@+id/confirmS"
         android:layout_width="121dp"
         android:layout_height="50dp"
         android:backgroundTint="#009688"
@@ -147,7 +147,7 @@
         app:layout_constraintVertical_bias="0.893" />
 
     <EditText
-        android:id="@+id/inDateDouble"
+        android:id="@+id/inDateSingle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="280dp"
@@ -161,7 +161,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/dDouble"
+        android:id="@+id/dSingle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="188dp"
@@ -174,7 +174,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/phoneDouble"
+        android:id="@+id/phoneSingle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#86D5D5"
@@ -188,7 +188,7 @@
         app:layout_constraintVertical_bias="0.421" />
 
     <EditText
-        android:id="@+id/noRoomDouble"
+        android:id="@+id/noRoomSingle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="428dp"

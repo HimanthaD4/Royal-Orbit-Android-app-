@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#9FD1D1"
-    tools:context=".KingRoom">
+    tools:context=".UpdateDoubleRoom">
 
 
 
@@ -34,7 +34,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.179"
-        app:srcCompat="@drawable/kingroom" />
+        app:srcCompat="@drawable/singleroom" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -87,11 +87,11 @@
 
 
     <Button
-        android:id="@+id/confirmKing"
+        android:id="@+id/btn_update"
         android:layout_width="121dp"
         android:layout_height="50dp"
-        android:backgroundTint="#009688"
-        android:text="Confirm"
+        android:backgroundTint="#EC0554"
+        android:text="Update"
         android:textColor="#FFFFFF"
         app:cornerRadius="30dip"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -105,7 +105,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="King's Room"
+        android:text="Update your Reservation"
         android:textColor="#033E3E"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -120,7 +120,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#DBF8F7"
-        android:text="Rs.20 000 FOR ONE DAY "
+        android:text="Rs.10 000 FOR ONE DAY "
         android:textColor="#033E3E"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -132,7 +132,7 @@
         app:layout_constraintVertical_bias="0.363" />
 
     <Button
-        android:id="@+id/btn_cancel"
+        android:id="@+id/btn_back"
         android:layout_width="118dp"
         android:layout_height="50dp"
         android:layout_marginEnd="60dp"
@@ -148,7 +148,7 @@
         app:layout_constraintVertical_bias="0.893" />
 
     <EditText
-        android:id="@+id/inDateKing"
+        android:id="@+id/inDateDouble"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="280dp"
@@ -162,7 +162,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/dKing"
+        android:id="@+id/dDouble"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="188dp"
@@ -175,7 +175,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/phoneKing"
+        android:id="@+id/phoneDouble"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#86D5D5"
@@ -189,7 +189,7 @@
         app:layout_constraintVertical_bias="0.421" />
 
     <EditText
-        android:id="@+id/noRoomKing"
+        android:id="@+id/noRoomDouble"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="428dp"
@@ -200,5 +200,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

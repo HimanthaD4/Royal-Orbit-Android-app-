@@ -17,12 +17,15 @@ public class MainActivity extends AppCompatActivity {
 
         btn_register = (Button)findViewById(R.id.btn_register);
         btn_login = (Button)findViewById(R.id.btn_login);
+
         btn_register.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 openregister();
             }
         });
+
+
         btn_login.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){

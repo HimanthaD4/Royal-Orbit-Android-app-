@@ -4,17 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.preference.EditTextPreference;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
-
-public class ReservedRoomDetalis extends AppCompatActivity {
+public class ReservedRoomDetailsSingle extends AppCompatActivity {
 
     private Button btn_update;
     private Button btn_delete;
@@ -26,8 +21,7 @@ public class ReservedRoomDetalis extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_reserved_room_detalis);
-
+        setContentView(R.layout.activity_reserved_room_details_single);
 
         btn_update = (Button)findViewById(R.id.btn_update);
         btn_delete = (Button)findViewById(R.id.btn_delete);
@@ -53,7 +47,8 @@ public class ReservedRoomDetalis extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openMenu();
-                Toast.makeText(ReservedRoomDetalis.this, "Delete Successful", Toast.LENGTH_SHORT).show();
+
+                Toast.makeText(ReservedRoomDetailsSingle.this, "Delete Succesfull", Toast.LENGTH_SHORT).show();
             }
         });
 
