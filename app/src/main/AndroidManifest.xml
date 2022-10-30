@@ -15,91 +15,49 @@
         android:theme="@style/Theme.RoyalOrbitLast"
         tools:targetApi="31">
         <activity
-            android:name=".UpdateQueenRoom"
+            android:name=".CartFood"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".UpdateSingleRoom"
+            android:name=".SnakesMenu"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ReservedRoomDetailsSingle"
+            android:name=".NoodlesMenu"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ReserveRoomDetailsQueen"
+            android:name=".PizzaMenu"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".UpdateDoubleRoom"
+            android:name=".SandwichMenu"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ReservedRoomDetailsDouble"
+            android:name=".BurgerMenu"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".UpdateKingRoom"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".ReservedRoomDetalis"
-            android:exported="true">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".HallReservation"
-            android:exported="true">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".SingleRoom"
-            android:exported="true">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".KingRoom"
-            android:exported="true">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".DoubleRoom"
-            android:exported="true">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".QueensRoom"
+            android:name=".Foodmainmenu"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
@@ -107,7 +65,7 @@
         </activity>
         <activity
             android:name=".RoomReservation"
-            android:exported="true">
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -115,6 +73,13 @@
         <activity
             android:name=".FoodReservation"
             android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".HallReservation"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -153,6 +118,10 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
