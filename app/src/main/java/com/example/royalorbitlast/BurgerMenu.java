@@ -9,7 +9,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class BurgerMenu extends AppCompatActivity {
+
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
 
     private ImageButton imageButton25;
     private ImageButton imageButton24;
@@ -18,6 +25,12 @@ public class BurgerMenu extends AppCompatActivity {
     private ImageButton imageButton21;
     private ImageButton imageButton22;
     private ImageButton imageButton23;
+
+    private boolean validateNumber(String input){
+        Pattern p = Pattern.compile("1-5");
+        Matcher m = p.matcher(input);
+        return m.matches();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +43,7 @@ public class BurgerMenu extends AppCompatActivity {
         editTextTextPersonName8 = findViewById(R.id.editTextTextPersonName8);
         editTextTextPersonName9 = findViewById(R.id.editTextTextPersonName9);
 
+
         imageButton23 = (ImageButton) findViewById(R.id.imageButton23);
         imageButton23.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,8 +52,13 @@ public class BurgerMenu extends AppCompatActivity {
                     editTextTextPersonName9.setError("Quantity is Compulsory");
                     return;
                 }
+                else if(editTextTextPersonName2.length()==1-5){
+                    editTextTextPersonName2.requestFocus();
+                    editTextTextPersonName2.setError("Maximum Quantity is 10");
+                    return;
+                }
                 else{
-                    openCartFood();
+//                    openCartFood();
                 }
             }
         });
@@ -53,7 +72,7 @@ public class BurgerMenu extends AppCompatActivity {
                     return;
                 }
                 else{
-                    openCartFood();
+//                    openCartFood();
                 }
             }
         });
@@ -67,7 +86,7 @@ public class BurgerMenu extends AppCompatActivity {
                     return;
                 }
                 else{
-                    openCartFood();
+//                    openCartFood();
                 }
             }
         });
@@ -81,7 +100,7 @@ public class BurgerMenu extends AppCompatActivity {
                     return;
                 }
                 else{
-                    openCartFood();
+//                    openCartFood();
                 }
             }
         });

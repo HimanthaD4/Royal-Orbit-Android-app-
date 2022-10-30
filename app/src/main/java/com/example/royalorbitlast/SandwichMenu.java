@@ -39,7 +39,7 @@ public class SandwichMenu extends AppCompatActivity {
                     return;
                 }
                 else{
-                    openCartFood();
+//                    openCartFood();
                 }
             }
         });
@@ -53,7 +53,7 @@ public class SandwichMenu extends AppCompatActivity {
                     return;
                 }
                 else{
-                    openCartFood();
+//                    openCartFood();
                 }
             }
         });
@@ -67,7 +67,7 @@ public class SandwichMenu extends AppCompatActivity {
                     return;
                 }
                 else{
-                    openCartFood();
+//                    openCartFood();
                 }
             }
         });
@@ -81,7 +81,7 @@ public class SandwichMenu extends AppCompatActivity {
                     return;
                 }
                 else{
-                    openCartFood();
+//                    openCartFood();
                 }
             }
         });
