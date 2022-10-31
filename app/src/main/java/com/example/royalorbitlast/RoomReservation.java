@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 public class RoomReservation extends AppCompatActivity {
 
@@ -22,14 +21,14 @@ public class RoomReservation extends AppCompatActivity {
         setContentView(R.layout.activity_room_reservation);
 
         btn_king = (Button) findViewById(R.id.btn_king);
-        btn_Queen = (Button) findViewById(R.id.btn_queen);
-        btn_Double = (Button) findViewById(R.id.btn_double);
-        btn_single = (Button) findViewById(R.id.btn_single);
+        btn_Queen = (Button) findViewById(R.id.btn_crown);
+        btn_Double = (Button) findViewById(R.id.btn_green);
+        btn_single = (Button) findViewById(R.id.btn_queen);
 
         btn_king.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openKing();
+//                openKing();
             }
         });
 
@@ -68,8 +67,8 @@ public class RoomReservation extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void openKing() {
-        Intent intent = new Intent(this, KingRoom.class);
-        startActivity(intent);
-    }
+//    private void openKing() {
+//        Intent intent = new Intent(this, KingRoom.class);
+//        startActivity(intent);
+//    }
 }

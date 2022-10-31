@@ -4,25 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:background="#9FD1D1"
-    tools:context=".KingRoom">
 
 
-
+    tools:context=".UpdateKingHall">
 
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="496dp"
-        android:layout_height="700dp"
+        android:layout_width="365dp"
+        android:layout_height="695dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/loginecovered" />
-
 
     <ImageView
         android:id="@+id/imageView3"
@@ -30,11 +29,11 @@
         android:layout_height="207dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.179"
-        app:srcCompat="@drawable/kingroom" />
+        app:srcCompat="@drawable/kingcourt" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -42,10 +41,10 @@
         android:layout_height="109dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.582"
+        app:layout_constraintVertical_bias="0.584"
         app:srcCompat="@drawable/type" />
 
     <ImageView
@@ -54,11 +53,12 @@
         android:layout_height="109dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.451"
+        app:layout_constraintVertical_bias="0.453"
         app:srcCompat="@drawable/type" />
+
 
     <ImageView
         android:id="@+id/imageView11"
@@ -66,10 +66,10 @@
         android:layout_height="109dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.719"
+        app:layout_constraintVertical_bias="0.712"
         app:srcCompat="@drawable/type" />
 
     <ImageView
@@ -79,19 +79,18 @@
         android:backgroundTint="#86D5D5"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.858"
+        app:layout_constraintVertical_bias="0.842"
         app:srcCompat="@drawable/type" />
 
-
     <Button
-        android:id="@+id/confirmKing"
+        android:id="@+id/btn_update"
         android:layout_width="121dp"
         android:layout_height="50dp"
-        android:backgroundTint="#009688"
-        android:text="Confirm"
+        android:backgroundTint="#EC0554"
+        android:text="Update"
         android:textColor="#FFFFFF"
         app:cornerRadius="30dip"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -99,28 +98,29 @@
         app:layout_constraintHorizontal_bias="0.189"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.894" />
+        app:layout_constraintVertical_bias="0.922" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="King's Room"
+        android:text="Update Your Reservation"
         android:textColor="#033E3E"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.059" />
+        app:layout_constraintVertical_bias="0.068" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#DBF8F7"
-        android:text="Rs.20 000 FOR ONE DAY "
+        android:text="Rs.1 000 000 FOR ONE DAY "
         android:textColor="#033E3E"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -132,7 +132,7 @@
         app:layout_constraintVertical_bias="0.363" />
 
     <Button
-        android:id="@+id/btn_cancel"
+        android:id="@+id/btn_back"
         android:layout_width="118dp"
         android:layout_height="50dp"
         android:layout_marginEnd="60dp"
@@ -145,37 +145,42 @@
         app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toEndOf="@+id/btn_confirm"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.893" />
+        app:layout_constraintVertical_bias="0.921" />
 
     <EditText
-        android:id="@+id/inDateKing"
+        android:id="@+id/inDateK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="280dp"
         android:backgroundTint="#86D5D5"
         android:ems="10"
         android:hint="           Check In Date"
         android:inputType="date"
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/noRoomK"
+        app:layout_constraintVertical_bias="0.26" />
 
     <EditText
-        android:id="@+id/dKing"
+        android:id="@+id/dK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="188dp"
+        android:layout_marginBottom="144dp"
         android:backgroundTint="#86D5D5"
         android:ems="10"
         android:hint="            No of Dates"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView12"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="@+id/imageView12"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/phoneKing"
+        android:id="@+id/phoneK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#86D5D5"
@@ -183,22 +188,27 @@
         android:hint="             Telephone"
         android:inputType="phone"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421" />
+        app:layout_constraintVertical_bias="0.451" />
 
     <EditText
-        android:id="@+id/noRoomKing"
+        android:id="@+id/noRoomK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="428dp"
+        android:layout_marginTop="392dp"
         android:backgroundTint="#86D5D5"
         android:ems="10"
-        android:hint="            No. of Rooms"
+        android:hint="            No of seats"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.626" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

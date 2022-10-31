@@ -4,9 +4,9 @@
     <item name="textView20" type="id" />
     <item name="textView18" type="id" />
     <item name="btn_king" type="id" />
+    <item name="btn_crown" type="id" />
     <item name="btn_queen" type="id" />
-    <item name="btn_single" type="id" />
-    <item name="btn_double" type="id" />
+    <item name="btn_green" type="id" />
     <item name="imageView23" type="id" />
     <item name="textView15" type="id" />
     <item name="imageView22" type="id" />
