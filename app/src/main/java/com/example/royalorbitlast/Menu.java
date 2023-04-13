@@ -30,6 +30,7 @@ public class Menu extends AppCompatActivity {
         fullNameLabel = findViewById(R.id.fullNameLable);
 
 //show all data
+        //an
         showAllUserData();
 
         foods = (ImageButton) findViewById(R.id.foods);
